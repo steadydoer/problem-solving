@@ -12,7 +12,7 @@ def solution(priorities, location):
     enum = list(enumerate([-x for x in priorities]))  # (location, -priority)
     normal_q = deque(enum)
     pq = queue.PriorityQueue()
-    ## put (-priority, location)
+    # put (-priority, location)
     for item in enum:
         pq.put((item[1], item[0]))
         pass
