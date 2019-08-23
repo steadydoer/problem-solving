@@ -1,6 +1,7 @@
-# 190817 23:40~24:15 / 190818 22:40~22:57 / total 52 min
+# SWEA-2805 농작물 수확하기
+# total elapsed time: 52 min
 
-# for standard input
+
 test_case = int(input())
 for case in range(1, test_case + 1):
     size = int(input())
