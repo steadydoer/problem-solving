@@ -17,12 +17,12 @@ def solve():
     n = int(input())
     switches = [-1] + [state for state in map(int, input().split())]
     students = int(input())
+    res = ''
     for _ in range(students):
         gender, number = list(map(int, input().split()))
         if gender == 1:  # 남학생
             for multi in range(number, n+1, number):
                 toggle_switch(switches, multi)
-            pass
         elif gender == 2:  # 여학생
             length = min([number - 1, n - number])
             changes = [number]
@@ -34,12 +34,12 @@ def solve():
                     break
             for idx in changes:
                 toggle_switch(switches, idx)
-        answer = ''
+        res = ''
         for i in range(1, n + 1, 20):
-            answer += ' '.join(map(str, switches[i:i+20]))
-            answer += '\n'
+            res += ' '.join(map(str, switches[i:i + 20]))
+            res += '\n'
 
-    return answer
+    return res
 
 
 answer = solve()
