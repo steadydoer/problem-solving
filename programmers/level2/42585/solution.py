@@ -21,3 +21,11 @@ def solution(arrangement):
                 answer += 1
             stack.pop()
     return answer
+
+
+def main():
+    assert solution('()(((()())(())()))(())') == 17
+
+
+if __name__ == '__main__':
+    main()
