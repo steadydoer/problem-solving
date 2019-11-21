@@ -1,6 +1,7 @@
 .idea
 .vscode/*
 out
+codingtest
 
 ### C++
 # Prerequisites
